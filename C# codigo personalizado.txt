@@ -1,0 +1,48 @@
+int Dia;
+int Mes;
+int Año;
+int Diaact;
+int Mesact;
+int Añoact;
+int edad=0;
+
+do{
+     Console.WriteLine("1. Día de nacimiento");
+       Dia = Convert.ToInt32 (Console.ReadLine());
+
+     Console.WriteLine("2. Mes de nacimiento");
+       Mes = Convert.ToInt32(Console.ReadLine ());
+
+     Console.WriteLine("3. Año de nacimiento");
+       Año = Convert.ToInt32(Console.ReadLine ());
+
+     Console.WriteLine("4. Día actual");
+       Diaact = Convert.ToInt32(Console.ReadLine ());
+
+         Console.WriteLine ("5. Mes actual");
+       Mesact = Convert.ToInt32(Console.ReadLine ());
+
+     Console.WriteLine("6. Año actual");
+     Añoact = Convert.ToInt32(Console.ReadLine ());
+
+ } while (Mesact == 2022);
+
+if (Mes<Mesact) {
+      edad=Añoact-Año;
+
+}    else {
+
+     if (Mes==Mesact) {
+         if (Dia<Diaact+1) {
+           edad=Añoact-Año;
+         } else {
+           edad=Añoact-Año-1;
+
+         }
+     
+         } 
+     }
+
+     Console.WriteLine("Edad: "+edad);
+
+
